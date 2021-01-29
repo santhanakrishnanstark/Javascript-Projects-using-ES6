@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exchange Rate Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Exchange Rate Calculator</h1>
+      <ul>
+        <li>
+          <select name="cur_one" id="cur_one">
+            <option value="CAD">CAD</option>
+            <option value="HKD">HKD</option>
+            <option value="ISK">ISK</option>
+            <option value="PHP">PHP</option>
+            <option value="DKK">DKK</option>
+            <option value="HUF">HUF</option>
+            <option value="CZK">CZK</option>
+            <option value="GBP">GBP</option>
+            <option value="RON">RON</option>
+            <option value="SEK">SEK</option>
+            <option value="IDR">IDR</option>
+            <option value="INR">INR</option>
+            <option value="BRL">BRL</option>
+            <option value="RUB">RUB</option>
+            <option value="HRK">HRK</option>
+            <option value="JPY">JPY</option>
+            <option value="THB">THB</option>
+            <option value="CHF">CHF</option>
+            <option value="EUR">EUR</option>
+            <option value="MYR">MYR</option>
+            <option value="BGN">BGN</option>
+            <option value="TRY">TRY</option>
+            <option value="CNY">CNY</option>
+            <option value="NOK">NOK</option>
+            <option value="NZD">NZD</option>
+            <option value="ZAR">ZAR</option>
+            <option value="USD">USD</option>
+            <option value="MXN">MXN</option>
+            <option value="SGD">SGD</option>
+            <option value="AUD">AUD</option>
+            <option value="ILS">ILS</option>
+            <option value="KRW">KRW</option>
+            <option value="PLN">PLN</option>
+          </select>
+        </li>
+        <li>
+          <input type="number" name="cur_amt_one" id="cur_amt_one" value="0" />
+        </li>
+      </ul>
+      <button id="swap">Swap</button>
+      <ul>
+        <li>
+          <select name="cur_two" id="cur_two">
+            <option value="CAD">CAD</option>
+            <option value="HKD">HKD</option>
+            <option value="ISK">ISK</option>
+            <option value="PHP">PHP</option>
+            <option value="DKK">DKK</option>
+            <option value="HUF">HUF</option>
+            <option value="CZK">CZK</option>
+            <option value="GBP">GBP</option>
+            <option value="RON">RON</option>
+            <option value="SEK">SEK</option>
+            <option value="IDR">IDR</option>
+            <option value="INR">INR</option>
+            <option value="BRL">BRL</option>
+            <option value="RUB">RUB</option>
+            <option value="HRK">HRK</option>
+            <option value="JPY">JPY</option>
+            <option value="THB">THB</option>
+            <option value="CHF">CHF</option>
+            <option value="EUR">EUR</option>
+            <option value="MYR">MYR</option>
+            <option value="BGN">BGN</option>
+            <option value="TRY">TRY</option>
+            <option value="CNY">CNY</option>
+            <option value="NOK">NOK</option>
+            <option value="NZD">NZD</option>
+            <option value="ZAR">ZAR</option>
+            <option value="USD">USD</option>
+            <option value="MXN">MXN</option>
+            <option value="SGD">SGD</option>
+            <option value="AUD">AUD</option>
+            <option value="ILS">ILS</option>
+            <option value="KRW">KRW</option>
+            <option value="PLN">PLN</option>
+          </select>
+        </li>
+        <li>
+          <input type="number" name="cur_amt_two" id="cur_amt_two" value="0" />
+        </li>
+      </ul>
+      <p id="result">0.00 USD = 0.00 INR</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

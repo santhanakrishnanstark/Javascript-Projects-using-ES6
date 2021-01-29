@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    background-color: steelblue;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 20px 0 0;
+}
+
+.game-container {
+    padding: 20px 30px;
+    position: relative;
+    margin: auto;
+    height: 350px;
+    width: 450px;
+}
+
+.wrong-letter-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.wrong-letter-container p {
+    margin: 0 0 5px;
+}
+
+.wrong-letter-container span {
+    font-size: 24px;
+}
+
+.word {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.letter {
+    border-bottom: 3px solid#fff;
+    display: inline-flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3px;
+    height: 50px;
+    width: 20px;
+}
+
+.figure-container {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 4px;
+    stroke-linecap: round;
+}
+
+.figure-part {
+    display: none;
+}
+
+.popup-container {
+    background-color: #122738c4;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.popup {
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 0px 1px 4px #eee;
+    padding: 20px;
+}
+
+.popup h2 {
+    color: #000;
+}
+
+.popup button {
+    cursor: pointer;
+    background-color: steelblue;
+    border: 0;
+    padding: 12px 20px;
+    margin: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.popup button:active {
+    transform: scale(0.98);
+}
+
+.popup button:focus {
+    outline: 0;
+}
+
+.notification-container {
+    background-color: blueviolet;
+    border-radius: 10px 10px 0 0;
+    padding: 15px 20px;
+    position: absolute;
+    bottom: -50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.notification-container p {
+    margin: 0;
+}
+
+.notification-container.show {
+    transform: translateY(-50px);
+}

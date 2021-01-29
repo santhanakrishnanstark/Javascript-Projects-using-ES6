@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Video Player</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="monitor">
+        <video src="Audio.mp4"></video>
+        <div class="controls">
+          <div class="mini-controls">
+            <span class="material-icons play-btn">
+              play_circle_filled
+            </span>
+            <!-- <span class="material-icons pause-btn">
+              pause_circle_filled
+            </span> -->
+            <span class="material-icons stop">
+              stop
+            </span>
+            <!-- <span class="material-icons">
+                volume_down
+              </span> -->
+            <!-- <span class="material-icons">
+              volume_up
+            </span> -->
+            <!-- <span class="material-icons">
+                volume_mute
+              </span> -->
+            <!-- <span class="material-icons volu">
+              volume_off
+            </span> -->
+          </div>
+          <div class="range-input">
+            <input
+              type="range"
+              name="interval"
+              id="interval"
+              class="progress"
+              value="0"
+            />
+            <span class="timestamp">0:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
